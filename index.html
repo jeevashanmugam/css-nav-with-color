@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nav Tab color</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+	.nav_primary {
+		width: 80%;
+		margin: 50px auto;
+		display: flex;
+		padding:15px;
+		justify-content: space-between;
+		align-items: center;
+		background-color:rgb(209, 224, 255);
+	    color:rgb(39, 49, 70);
+
+	}
+	.nav_seocndary {
+		width: 80%;
+		margin: 50px auto;
+		display: flex;
+		padding:15px;
+		justify-content: space-between;
+		align-items: center;
+		background-color:rgb(226, 227, 229);
+        color:rgb(36, 38, 38);
+    }
+	.nav_warning {
+		width: 80%;
+		margin: 50px auto;
+		display: flex;
+		padding:15px;
+		justify-content: space-between;
+		align-items: center;
+		background-color:rgb(255, 243, 205);
+	     color:rgb(101, 96, 81);
+    }
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav_head {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.nav_sec {
+    padding: 10px	 10px;
+    display: flex;
+    gap: 50px;
+    color: white;
+}
+
+.home_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: relative;
+}
+
+.home_nav ul a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.form_sec form {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.form_sec input {
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.form_sec a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+}
+
+.hidden {
+    cursor: not-allowed;
+}
+
+.dropown p {
+    padding: 10px;
+}
+
+.dropown {
+    display: none;
+    border: 1px solid;
+    position: relative;
+}
+
+.drop_show:hover .dropown {
+    background-color: white;
+    color: black;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.dropown p:hover {
+    background-color: #80808063;
+}
+</style>
+
+<body>
+
+	<section class="main">
+
+		<!-- COLOR van section START -->
+		
+		<div class="container">
+			<!-- FIRST NAV SECTION START -->
+			<nav>
+				<div class="nav_primary">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- FORM SECTON START -->
+					<div class="form_sec">
+						<form>
+							<input type="text" id="" name="search" placeholder="Search">
+							<a href="#">Search</a>
+						</form>
+					</div>
+					<!-- FORM SECTON END -->
+				</div>
+			</nav>
+			<!-- FIRST NAV SECTION END -->
+			
+			<!--SECOND NAV SECTION START -->
+			<nav>
+				<div class="nav_seocndary">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- FORM SECTON START -->
+					<div class="form_sec">
+						<form>
+							<input type="text" id="" name="search" placeholder="Search">
+							<a href="#">Search</a>
+						</form>
+					</div>
+					<!-- FORM SECTON END -->
+				</div>
+			</nav>
+			<!-- SECOND NAV SECTION END -->	
+
+			<!-- THIRD NAV SECTION START -->
+			<nav>
+				<div class="nav_warning">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- FORM SECTON START -->
+					<div class="form_sec">
+						<form>
+							<input type="text" id="" name="search" placeholder="Search">
+							<a href="#">Search</a>
+						</form>
+					</div>
+					<!-- FORM SECTON END -->
+				</div>
+			</nav>
+			<!-- THIRD NAV SECTION END -->
+
+
+		</div>
+
+		<!-- COLOR van section end -->
+
+
+		<!-- FIRST NAV SECTION START -->
+		<section class="container">
+			<nav>
+				<div class="nav_head">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li class="drop_show"><a href="#">Pricing </a></li>
+								<li><a class="hidden" href="#">Disabled</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</nav>
+		</section>
+		<!-- FIRST NAV SECTION END -->
+
+
+		<!-- FIRST NAV SECTION START -->
+		<section class="container">
+			<nav>
+				<div class="nav_head">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li class="drop_show"><a href="#">Pricing </li>
+								<li><a class="hidden" href="#">Disabled</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- FORM SECTON START -->
+					<div class="form_sec">
+						<form>
+							<input type="text" id="" name="search" placeholder="Search">
+							<a href="#">Search</a>
+						</form>
+					</div>
+					<!-- FORM SECTON END -->
+				</div>
+			</nav>
+		</section>
+		<!-- FIRST NAV SECTION END -->
+
+
+
+
+		<!-- SECOND NAV SECTION START -->
+		<section class="container">
+			<nav>
+				<div class="nav_head">
+					<div class="nav_sec">
+						<h1>Navbar</h1>
+						<div class="home_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a class="hidden" href="#">Pricing</a></li>
+								<li class="drop_show"><a href="#">Dropdown Link <i class="fa-solid fa-caret-down"></i></a>
+
+									<!-- DROPDOWN START -->
+									<div class="dropown">
+										<p>Value pricing</p>
+										<p>Penetration pricing</p>
+										<p>Price skimming</p>
+										<p>Bundle pricing</p>
+
+										<p>Premium pricing</p>
+										<p>Competitive pricing</p>
+
+									</div>
+									<!-- DROPDOWN END -->
+
+
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- FORM SECTON START -->
+					<div class="form_sec">
+						<form>
+							<input type="text" id="" name="search" placeholder="Search">
+							<a href="#">Search</a>
+						</form>
+					</div>
+					<!-- FORM SECTON END -->
+				</div>
+			</nav>
+		</section>
+		<!-- SECOND NAV SECTION END -->
+
+
+
+	</section>
+
+</body>
+
+</html>
